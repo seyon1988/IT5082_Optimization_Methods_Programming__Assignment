@@ -18,3 +18,5 @@ data/raw/
 Thumbs.db
 .idea/
 .vscode/
+~$*.docx
+~$*.doc
