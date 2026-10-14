@@ -1,0 +1,12 @@
+IT5082 Optimization Methods - Group Programming Assignment
+Nurse / Staff Rostering: Exact Integer Linear Programming vs Genetic Algorithm
+
+Dataset:
+https://schedulingbenchmarks.org/nrp/
+(Nurse Rostering Benchmark Instances 1-24, Curtois & Qu)
+
+GitHub repository:
+https://github.com/seyon1988/IT5082_Optimization_Methods_Programming__Assignment
+
+YouTube video (15 minutes):
+https://youtu.be/fohTdn71grI

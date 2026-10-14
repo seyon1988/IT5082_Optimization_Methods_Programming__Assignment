@@ -1,0 +1,48 @@
+IT5082 Optimization Methods - Group Programming Assignment
+Nurse / Staff Rostering: Exact Integer Linear Programming vs Genetic Algorithm
+
+Group members and individual contributions
+--------------------------------------------
+
+1. Ramalingham Seyon (MS26912516)
+   - Instance parser and shared data model (rostering_common.py)
+   - Exact method: ILP formulation in PuLP/CBC (01_ilp.ipynb) - all constraints
+     C1-C10, built and validated incrementally (v1 partial model, then v2 full
+     model reproducing the published best-known optima 607/828 on
+     Instances 1/2 exactly)
+   - LP relaxation and lower-bound analysis
+   - ILP scalability experiments across all six benchmark instances
+     (Instances 1, 2, 3, 6, 8, 12), 300-second time limit, results saved to
+     results/ilp_results.csv
+   - ILP result figures (runtime vs. problem size, solution gap vs. best-known)
+   - Report sections: Introduction and Problem Statement, Data and Benchmark
+     Description, Mathematical Formulation, Exact Method (ILP) and its results
+
+2. Kekulawala Vidanalage Dhammika Kekulawala (MS26902784)
+   - Independent roster evaluator/checker (hard-constraint violations and
+     penalty scoring), written from the benchmark rules alone and used to
+     validate both the ILP and the GA so neither method is graded by its own
+     logic
+   - Heuristic method: Genetic Algorithm in DEAP (02_ga.ipynb) - roster
+     encoding, penalty-method fitness, tournament selection with elitism,
+     row crossover, and three mutation operators
+   - Penalty-coefficient (rho) study and population/mutation parameter tuning
+   - GA scalability experiments across all six benchmark instances, 10 random
+     seeds each, results saved to results/ga_results.csv
+   - GA result figures (convergence, feasibility/sensitivity, box plots)
+   - Report sections: Metaheuristic Method (Genetic Algorithm) and its results
+
+Joint work (both members)
+--------------------------------------------
+   - Comparison notebook (03_comparison.ipynb): merged ILP vs. GA results
+     table, four-panel comparison figure, and the written findings
+   - Report sections: Abstract, Experimental Setup, Results, Discussion,
+     Conclusion
+   - Presentation video script and recording
+   - Cross-checking: each member's method was reviewed against the other
+     member's independent checker/constraints before being trusted
+
+Evidence of individual contribution: commit history on the project GitHub
+repository (branches "seyon" and "dhammika-dev", merged via pull request),
+with each notebook and section owned and committed by the member listed
+above.
